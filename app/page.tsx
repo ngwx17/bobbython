@@ -57,7 +57,7 @@ export default function Home() {
       </header>
 
       {/* ── Scrollable Chat Area ──────────────────────────────────────────────── */}
-      <main className="flex-1 pt-[88px] pb-[280px]">
+      <main className="flex-1 pt-[88px] pb-[160px]">
         <div className="max-w-2xl mx-auto px-4 py-6 flex flex-col gap-10">
           {history.length === 0 && !isLoading && (
             <p className="text-center text-gray-500 text-sm mt-12">
@@ -94,7 +94,7 @@ export default function Home() {
 
       {/* ── Fixed Bottom Bar ─────────────────────────────────────────────────── */}
       <div className="fixed bottom-0 left-0 right-0 z-10 bg-gray-950/95 backdrop-blur border-t border-gray-800 shadow-[0_-4px_12px_rgba(0,0,0,0.3)]">
-        <div className="max-w-2xl mx-auto px-4 pt-4 pb-6 flex flex-col gap-3">
+        <div className="max-w-2xl mx-auto px-4 pt-3 pb-4 flex flex-col gap-3">
           {/* Dismissable error card */}
           {error && (
             <div className="flex items-start justify-between gap-3 rounded-2xl border-2 border-red-500 bg-red-950/60 px-4 py-3 text-sm text-red-300">
